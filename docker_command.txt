@@ -1,0 +1,7 @@
+docker build --tag python-django-docker-basic .                 -- To create the image in docker.
+docker run --publish 8080:8080 python-django-docker-basic       -- To create container to run the image.
+docker-compose build                                            -- To build an image
+docker-compose run                                              -- To build and reun the image.
+docker-compose run --rm app django-admin startproject core .    -- To remove current image and build new.
+docker-compose up                                               -- To start the container.
+
